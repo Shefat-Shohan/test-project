@@ -99,7 +99,6 @@ export default function Slider8() {
               <textarea
                 id="message"
                 className="w-full mt-1 p-2 text-sm sm:text-md font-actorFont border rounded-md focus:ring focus:ring-[#251D19] focus:outline-none"
-                rows="4"
                 placeholder="Value"
                 required
               ></textarea>

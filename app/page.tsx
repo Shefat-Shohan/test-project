@@ -6,15 +6,15 @@ import Hero from "@/sections/Hero";
 
 export default function Home() {
   return (
-    <main>
+    <main className="min-h-screen flex flex-col justify-between">
+      <Hero />
       <div>
-        <Hero />
         <Title title="OVER ONS" />
         <About />
         <Carousel />
         <Title title="ONS WERK" />
-        <Footer />
       </div>
+      <Footer />
     </main>
   );
 }
