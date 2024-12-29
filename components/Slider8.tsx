@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Logo from "@/public/logo.png";
+import Link from "next/link";
 
 export default function Slider8() {
   return (
@@ -11,10 +12,12 @@ export default function Slider8() {
 
         {/* Logo */}
         <div className="absolute top-4 left-4 md:top-8 md:left-8 flex gap-4 items-center z-20">
-          <Image src={Logo} alt="logo" />
-          <span className="font-tiltWarpFont text-[14px] sm:text-[18px] md:text-[25px] lg:text-[35px] text-white drop-shadow-xl">
-            GMK Dakonderhoud
-          </span>
+          <Link href="/" className="flex gap-4 items-center ">
+            <Image src={Logo} alt="logo" />
+            <span className="font-tiltWarpFont text-[18px] md:text-[35px] leading-[44px] text-white drop-shadow-xl">
+              GMK Dakonderhoud
+            </span>
+          </Link>
         </div>
 
         {/* Content */}

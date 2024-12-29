@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Logo from "@/public/logo.png";
+import Link from "next/link";
 
 export default function Slider6() {
   return (
@@ -9,11 +10,13 @@ export default function Slider6() {
       <div className="absolute inset-0 bg-[#251D19] opacity-30 z-10"></div>
 
       {/* Logo at the top */}
-      <div className="flex gap-4 items-center z-20">
-        <Image src={Logo} alt="logo" />
-        <span className="font-tiltWarpFont text-[18px] md:text-[35px] leading-[44px] text-white drop-shadow-xl">
-          GMK Dakonderhoud
-        </span>
+      <div className="z-20">
+        <Link href="/" className="flex gap-4 items-center ">
+          <Image src={Logo} alt="logo" />
+          <span className="font-tiltWarpFont text-[18px] md:text-[35px] leading-[44px] text-white drop-shadow-xl">
+            GMK Dakonderhoud
+          </span>
+        </Link>
       </div>
 
       {/* Content at the bottom */}

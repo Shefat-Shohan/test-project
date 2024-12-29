@@ -43,7 +43,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${nobile.variable} ${actorFont.variable} ${tiltWarpFont.variable} ${oranienbaum.variable} antialiased`}
+        className={`${nobile.variable} ${actorFont.variable} ${tiltWarpFont.variable} ${oranienbaum.variable} antialiased bg-white`}
       >
         {children}
       </body>

@@ -6,6 +6,7 @@ import TOPPRO from "@/public/top-pro.png";
 import GOOGLE from "@/public/google.png";
 import Comment from "@/public/comment.png";
 import Card from "./Card";
+import Link from "next/link";
 
 export default function Slider1() {
   return (
@@ -14,11 +15,13 @@ export default function Slider1() {
       <div className="absolute inset-0 bg-[#251D19] opacity-30 z-10" />
 
       {/* Logo at the top */}
-      <div className="flex gap-4 items-center z-20">
-        <Image src={Logo} alt="logo" />
-        <span className="font-tiltWarpFont text-[18px] md:text-[35px] leading-[44px] text-white drop-shadow-xl">
-          GMK Dakonderhoud
-        </span>
+      <div className="z-20">
+        <Link href="/" className="flex gap-4 items-center ">
+          <Image src={Logo} alt="logo" />
+          <span className="font-tiltWarpFont text-[18px] md:text-[35px] leading-[44px] text-white drop-shadow-xl">
+            GMK Dakonderhoud
+          </span>
+        </Link>
       </div>
       {/* grid block */}
 
@@ -75,7 +78,7 @@ export default function Slider1() {
           />
         </div>
         {/* images */}
-        <div className="absolute bottom-4 lg:bottom-16 -right-20 z-20 ">
+        <div className="absolute bottom-4 lg:bottom-8 -right-20 z-20 ">
           <Image src={Comment} alt="Comment" width={463} height={157} />
         </div>
       </div>

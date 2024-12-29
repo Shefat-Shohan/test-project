@@ -19,11 +19,13 @@ export default function Slider5() {
       {/* Logo at the top */}
       <div className="flex justify-between items-center z-20">
         {/* Logo and Title */}
-        <div className="flex items-center gap-4">
-          <Image src={Logo} alt="logo" />
-          <span className="font-tiltWarpFont text-[18px] md:text-[35px] leading-[44px] text-white drop-shadow-xl">
-            GMK Dakonderhoud
-          </span>
+        <div className="gap-4">
+          <Link href="/" className="flex gap-4 items-center ">
+            <Image src={Logo} alt="logo" />
+            <span className="font-tiltWarpFont text-[18px] md:text-[35px] leading-[44px] text-white drop-shadow-xl">
+              GMK Dakonderhoud
+            </span>
+          </Link>
         </div>
 
         {/* Hamburger Icon for small screens */}
